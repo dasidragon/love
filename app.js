@@ -1,12 +1,7 @@
 const wrapper = document.querySelector('.wrapper')
 const h = document.querySelector('#name')
 
-name = prompt('Напиши свое имя')
-
-if (name.length) {
-    handleName()
-    h.innerHTML = name
-}
+h.innerHTML = prompt('Напиши свое имя')
 
 function check() {
     if (document.forms[0].elements[0].checked == true && document.forms[0].elements[1].checked == true && document.forms[0].elements[2].checked == true) {
